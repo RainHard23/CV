@@ -1,0 +1,40 @@
+.work {
+    width: 600px;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+.description {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.imgBlock {
+    width: 100%;
+    height: 200px;
+    background-color: #e86c73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://yt3.ggpht.com/7ZMbRacR7yeqZG3lCXN8CSSaEi5IJdRbGgUNDaaK4tWsRloUBhh6Nr7_uQvU5qeodISc1_qxhw=s900-c-k-c0x00ffffff-no-rj");
+    background-size: cover;
+    background-position: center;
+}
+
+.workButton {
+    color: white;
+    background: #00000094;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.imgBlock img {
+    height: 400px;
+    width: 100%;
+}
