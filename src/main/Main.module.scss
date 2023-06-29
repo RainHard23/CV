@@ -1,0 +1,47 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+    min-height: 100vh;
+    background-color: $bgMainColor;
+    padding: $paddingMain;
+    .mainContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 7%;
+        .text {
+            & .prevTitle {
+                @include text($textFontFamily, 16px, 1.8, 400)
+            }
+            max-width: 680px;
+            width: 100%;
+            & h1 {
+                @include text($titleFontFamily, 44px, 1.2, 700);
+                padding: 10px 0 10px;
+                letter-spacing: 5px;
+                & span {
+                    margin-left: 20px;
+                }
+            }
+            .subTitle {
+                @include text($titleFontFamily, 27px, 1.8, 400);
+                margin: 0;
+            }
+        }
+        .photo {
+            margin-top: 20px;
+            width: 300px;
+            height: 400px;
+            background: url("../assets/img/naAvy.jpg");
+            @include imageSetting();
+
+        }
+    }
+}
+
+
+
+
+
+

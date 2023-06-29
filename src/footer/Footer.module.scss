@@ -1,0 +1,46 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.footerBlock {
+    background-color: $bgMainColor;
+    padding: 40px 0;
+    text-align: center;
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+
+            @include text($textFontFamily, 22px, 1.8, 700);
+        }
+        .iconBlock {
+            display: flex;
+            margin: 0 0 20px;
+            .footerIcon {
+                height: 60px;
+                width: 60px;
+                background-color: #4b4545;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+        & p {
+            @include text($textFontFamily, 14px, 1.8, 400);
+            color: rgba(255, 255, 255, .5);
+            margin: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

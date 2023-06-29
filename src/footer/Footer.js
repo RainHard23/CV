@@ -1,6 +1,6 @@
 import React from 'react';
 import styleContainer from "../common/styles/Container.module.css";
-import s from './Footer.module.css'
+import s from './Footer.module.scss'
 
 const Footer = () => {
     return (
@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className={s.footerIcon}></div>
                     <div className={s.footerIcon}></div>
                 </div>
-                <p>Все права защищены</p>
+                <p>© 2023 kekes, All Rights Reserved.</p>
             </div>
         </div>
     );

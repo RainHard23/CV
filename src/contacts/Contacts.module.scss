@@ -1,0 +1,87 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.contactsBlock {
+    padding: $paddingMain;
+    background-color: $bgSecondColor;
+    .contactsContainer {
+        display: flex;
+        flex-direction: column;
+        .formBlock {
+            max-width: 540px;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            & input {
+                background: #2a2a2c;
+                border: 1px solid #4a4a4a;
+                padding: 0 15px;
+                border-radius: 0;
+                height: calc(1.5em + 0.75rem + 2px);
+                margin-bottom: 1rem;
+                outline: 0;
+
+                @include text($textFontFamily, 12px, 1.8, 400);
+                color: #605f5f;
+                &:focus {
+                    border: none;
+                }
+
+            }
+            & textarea {
+                outline: none;
+                height: auto;
+                background: #252527 !important;
+                border: 1px solid #4a4a4a;
+                font-size: 12px;
+                padding: 15px;
+                border-radius: 0;
+                @include text($textFontFamily, 12px, 1.8, 400);
+                color: #605f5f;
+            }
+        }
+        .button {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+            padding: 7px 20px;
+            cursor: pointer;
+            margin: 15px auto;
+            position: relative;
+            background: transparent;
+            max-width: 170px;
+            z-index: 22;
+            text-align: center;
+            border-radius: 0;
+            width: 100%;
+            border: none;
+            transition: all 0.4s ease-in-out 0s;
+
+            @include text($textFontFamily, 14px, 1.2, 400);
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 10px;
+                width: 50%;
+                background: #4e93e6;
+                z-index: -1;
+                transition: all 0.2s ease-in-out 0s;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
