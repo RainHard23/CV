@@ -9,7 +9,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-top: 7%;
+        margin-top: 5%;
         .text {
             & .prevTitle {
                 @include text($textFontFamily, 16px, 1.8, 400)
