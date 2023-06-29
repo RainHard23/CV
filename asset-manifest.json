@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.b975c98d.css",
-    "main.js": "/CV/static/js/main.fe507bda.js",
+    "main.css": "/CV/static/css/main.0845678d.css",
+    "main.js": "/CV/static/js/main.2341eced.js",
     "static/js/787.a71561b8.chunk.js": "/CV/static/js/787.a71561b8.chunk.js",
+    "static/media/pudge.jpg": "/CV/static/media/pudge.75afd15a61856ef873ac.jpg",
+    "static/media/kek.jpg": "/CV/static/media/kek.2b132fc978be7220beb1.jpg",
+    "static/media/naAvy.jpg": "/CV/static/media/naAvy.9b02d26add51f719fef5.jpg",
+    "static/media/scss.svg": "/CV/static/media/scss.6a2ea883ddb489767be73d96b1be6fac.svg",
+    "static/media/react.svg": "/CV/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/material.svg": "/CV/static/media/material.9308dfab43db30b05f3498fafec45240.svg",
+    "static/media/restapi.svg": "/CV/static/media/restapi.753af30e7643e2b272e04e3c2066cdd7.svg",
+    "static/media/redux.svg": "/CV/static/media/redux.a95675408ae17c456965e2f09376c31a.svg",
+    "static/media/typescript.svg": "/CV/static/media/typescript.17d5e87eac2c9d1dc722ce1e0b60d5df.svg",
+    "static/media/reduxtoolkit.svg": "/CV/static/media/reduxtoolkit.227a1d3af6ddaa88a09160e8725dcdf3.svg",
+    "static/media/utest.svg": "/CV/static/media/utest.4cb23c309fd08a06dbb6a0edffcd8569.svg",
+    "static/media/git.svg": "/CV/static/media/git.4e11bfbcf21ed0e74f25ba7d1d2d1ee2.svg",
     "index.html": "/CV/index.html",
-    "main.b975c98d.css.map": "/CV/static/css/main.b975c98d.css.map",
-    "main.fe507bda.js.map": "/CV/static/js/main.fe507bda.js.map",
+    "main.0845678d.css.map": "/CV/static/css/main.0845678d.css.map",
+    "main.2341eced.js.map": "/CV/static/js/main.2341eced.js.map",
     "787.a71561b8.chunk.js.map": "/CV/static/js/787.a71561b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b975c98d.css",
-    "static/js/main.fe507bda.js"
+    "static/css/main.0845678d.css",
+    "static/js/main.2341eced.js"
   ]
 }
