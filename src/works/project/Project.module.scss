@@ -14,14 +14,15 @@
         @include imageSetting;
         position: relative;
         &::before {
-            position: absolute;
             content: '';
-            background-color: black;
+            position: absolute;
             top: 0;
-            bottom: 0;
             left: 0;
             right: 0;
-            opacity: 0.4;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 0; /* Начальная прозрачность */
+            transition: opacity 0.3s;
         }
         & img {
             height: 400px;
@@ -35,20 +36,28 @@
             text-decoration: none;
             position: relative;
             z-index: 100;
+            transition: 0.3s linear;
+            &:hover {
+                background-color: $primaryColor;
+            }
         }
     }
     .projectInfo {
         padding: 25px 20px;
+        text-align: center;
         .title {
-            @include text($titleFontFamily, 16px, 1.2);
-
+            @include text($titleFontFamily, 20px, 1.2);
             margin: 0 0 5px;
         }
         .description {
-            @include text($textFontFamily, 12px, 1.8, 400);
+            @include text($textFontFamily, 14px, 1.8, 400);
 
         }
     }
+}
+
+.work .imgBlock:hover::before {
+    opacity: 1; /* Показать затемнение при наведении */
 }
 
 

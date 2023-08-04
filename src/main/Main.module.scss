@@ -5,11 +5,25 @@
     min-height: 100vh;
     background-color: $bgMainColor;
     padding: $paddingMain;
+    position: relative;
+    .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     .mainContainer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 5%;
+        @media screen and (max-width: 1027px) {
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
         .text {
             & .prevTitle {
                 @include text($textFontFamily, 16px, 1.8, 400)
@@ -22,6 +36,22 @@
                 letter-spacing: 5px;
                 & span {
                     margin-left: 20px;
+                    z-index: 0;
+                    position: relative;
+                    display: inline-block;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 20px;
+                        background-color: $primaryColor;
+                        bottom: 0;
+                        z-index: -1;
+
+                        @media screen and (max-width: 604px) {
+                            width: 43%;
+                        }
+                    }
                 }
             }
             .subTitle {
@@ -29,14 +59,37 @@
                 margin: 0;
             }
         }
-        .photo {
-            margin-top: 20px;
-            width: 300px;
-            height: 400px;
-            background: url("../assets/img/naAvy.jpg");
-            @include imageSetting();
-
+        .image {
+            position: relative;
+            z-index: 1;
+            @media screen and (max-width: 1143px) {
+                margin-top: 50px;
+            }
+            .photo {
+                //margin-top: 20px;
+                width: 300px;
+                height: 400px;
+                @include imageSetting();
+                background-image: url("../assets/img/naAvy.jpg");
+                background-position: 80% 0;
+                @media screend and (max-width: 600px) {
+                    height: 360px;
+                    width: 250px;
+                    transition: .5s;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    height: 110%;
+                    width: 100%;
+                    border: 5px solid $primaryColor;
+                    left: 15px;
+                    top: -15px;
+                    z-index: -1;
+                }
+            }
         }
+
     }
 }
 

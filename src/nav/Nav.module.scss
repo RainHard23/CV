@@ -8,5 +8,16 @@
     & a {
         text-decoration: none;
         color: $textColor;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            color: $primaryColor;
+        }
+    }
+    .active {
+        color: $primaryColor;
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
     }
 }

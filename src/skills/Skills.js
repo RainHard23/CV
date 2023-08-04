@@ -13,6 +13,7 @@ import mUIImg from '../assets/img/skills/material.svg'
 import gitImg from '../assets/img/skills/git.svg'
 import scssImg from '../assets/img/skills/scss.svg'
 import uTestImg from '../assets/img/skills/utest.svg'
+import Fade from "react-reveal/Fade";
 
 
 const Skills = () => {
@@ -50,7 +51,8 @@ const Skills = () => {
 
 
     return (
-        <div className={style.skillsBlock}>
+        <div id='skills' className={style.skillsBlock}>
+            <Fade bottom>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={style.skills}>
@@ -65,6 +67,7 @@ const Skills = () => {
                 <Skill icon={uTestIcon} title={"Unit Test"} description={'Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
                 </div>
             </div>
+            </Fade>
 
         </div>
     );

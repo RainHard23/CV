@@ -18,9 +18,12 @@
             display: flex;
             margin: 0 0 20px;
             .footerIcon {
+                border-radius: 50px;
+                border: 1px solid #3d3d3d;
                 height: 60px;
                 width: 60px;
-                background-color: #4b4545;
+                background-color: $bgMainColor;
+                @include imageSetting;
                 &:not(:last-child) {
                     margin-right: 10px;
                 }
