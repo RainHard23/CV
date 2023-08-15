@@ -14,7 +14,7 @@ const Contacts = () => {
 
     const onSubmit = (data) => {
         console.log(data.firstName)
-        axios.post("http://localhost:3010/sendMessage", {
+        axios.post("https://server-amber-five.vercel.app/sendMessage", {
             firstName: data.firstName,
             email: data.email,
             message: data.message
