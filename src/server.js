@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 
 const transporter = nodemailer.createTransport({
     service: "gmail",
-    // host: 'smtp.mail.ru',
+
     port: 25,//465,
     secure: false,
     tls: {
